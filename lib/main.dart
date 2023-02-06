@@ -1,6 +1,5 @@
 import 'package:arcore_example/views/homeView.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,18 +15,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.nunitoSansTextTheme(
-          Theme.of(context).textTheme,
-        ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
           centerTitle: true,
-          iconTheme: const IconThemeData(color: Colors.black),
-          titleTextStyle: GoogleFonts.nunito(
-            color: Colors.black,
-            fontSize: 20,
-          ),
+          iconTheme: IconThemeData(color: Colors.black),
         ),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
